@@ -31,10 +31,104 @@
             </ul>
         </nav>
         <section class="section  bg-light">
-            <h3>Utilidades</h3>
+            <h2>Utilidades</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Borders</h5>
+                    <p>Se utiliza <code>border</code> o <code>rounded</code></p>
+                    <code>
+                        <pre>
+                            &lt;span class="border-0"&gt;
+                            &lt;span class="border-top-0"&gt;
+                            
+                            &lt;span class="border border-primary"&gt;
+                            &lt;span class="border border-secondary"&gt;
+            
+                            &lt;img src="..." alt="..." class="rounded-pill"&gt;
+                            &lt;img src="..." alt="..." class="rounded-0"&gt;
+                            </pre>
+                    </code>
+                </div>
+            </div>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Clearfix</h5>
+                    <p>Se le añade al padre del float, también se puede usar como un <code>@mixin</code></p>
+                </div>
+            </div>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Colores</h5>
+                    <p>Se puede utilizar en textos y en backgrounds. Existe <code>transparent</code> para fondos</p>
+                    <code>
+                        <pre>
+                                        <span class="text-primary">Primary</span> &lt;a href="#" class="text-primary"&gt;
+                                        <span class="text-secondary">Secondary</span> &lt;a href="#" class="text-secondary"&gt;
+                                        <span class="text-success">Success</span> &lt;a href="#" class="text-success"&gt;
+                                        <span class="text-danger">Danger</span> &lt;a href="#" class="text-danger"&gt;
+                                        <span class="text-warning">Warning</span> &lt;a href="#" class="text-warning"&gt;
+                                        <span class="text-info">Info</span> &lt;a href="#" class="text-info"&gt;
+                                        <span class="text-light bg-dark">Light</span> &lt;a href="#" class="text-light bg-dark"&gt;
+                                        <span class="text-dark">Dark</span> &lt;a href="#" class="text-dark"&gt;
+                                        <span class="text-muted">Muted</span> &lt;a href="#" class="text-muted"&gt;
+                                        <span class="text-white bg-dark">White</span> &lt;a href="#" class="text-white bg-dark"&gt;
+                                </pre>
+                    </code>
+                </div>
+            </div>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Display</h5>
+                    <p>None, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex</p>
+                    <code>
+                        <pre>
+                                &lt;div class="d-inline"&gt;
+                                &lt;span class="d-block"&gt;
+                        </pre>
+                    </code>
+                    <div class="row">
+                        <div class="caja col p-4">
+                            <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+                            <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+                        </div>
+                        <div class="caja col p-3">
+                            <span class="d-block p-2 bg-primary text-white">d-block</span>
+                            <span class="d-block p-2 bg-dark text-white">d-block</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3></h3>
+
+
+
+
+
+
+
+
+            <h3>Embed</h3>
+            <h3>Float</h3>
+            <h3>Screen readers</h3>
+            <h3>Shadows</h3>
+            <h3>Stretched link</h3>
+            <h3>Vertical align</h3>
+            <h3>...</h3>
         </section>
-        <footer id="sticky-footer" class="bg-dark text-white">
-            <div class="container text-center py-2">
+        <footer class="bg-dark text-white">
+            <div class="container p-2 clearfix">
+                <nav>
+                    <ul class="d-flex flex-column flex-sm-row justify-content-between p-0">
+                        <li class="text-center"><a href="">Enlace 1</a></li>
+                        <li class="text-center"><a href="">Enlace 2</a></li>
+                        <li class="text-center"><a href="">Enlace 3</a></li>
+                    </ul>
+                </nav>
+
                 <small>Copyright &copy; Erlantz Caballero <a target="_blank" href="https://github.com/Erlantzcg89"><span
                             class="fab fa-github"></span></a></small>
             </div>

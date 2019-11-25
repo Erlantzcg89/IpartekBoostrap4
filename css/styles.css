@@ -67,10 +67,8 @@ main.container {
     margin: 0 0 14px;
 }
 
-.col,
-.col-sm {
+.caja {
     border: 1px solid #333;
-    background-color: #ddd;
     text-align: center;
 }
 
