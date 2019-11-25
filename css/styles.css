@@ -1,0 +1,99 @@
+header.header {
+    padding: 20px 0 10px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+
+header h6 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+}
+
+main:before {
+    content: "Mobile First < 576px";
+    float: right;
+    color: red;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: teal;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer span {
+    margin-left: 5px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+footer small {
+    position: relative;
+    float: right;
+}
+
+main.container {
+    padding: 0;
+}
+
+.section {
+    padding: 10px;
+}
+
+.row {
+    margin: 0 0 14px;
+}
+
+.col,
+.col-sm {
+    border: 1px solid #333;
+    background-color: #ddd;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    main:before {
+        content: "Small devices 576px";
+    }
+}
+
+@media (min-width: 768px) {
+    main:before {
+        content: "Medium devices 768px";
+    }
+}
+
+@media (min-width: 992px) {
+    main:before {
+        content: "Large devices 992px";
+    }
+}
+
+@media (min-width: 1200px) {
+    main:before {
+        content: "Extra large devices 1200px";
+    }
+}

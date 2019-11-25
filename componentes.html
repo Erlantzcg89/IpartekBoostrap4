@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Hola, mundo!</title>
+    <title>Componentes</title>
 </head>
 
 <body>
@@ -23,25 +23,34 @@
         </header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
             <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="grid-system.html">Grid system</a></li>
-                <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="componentes.html">Componentes</a></li>
                 <li class="nav-item"><a class="nav-link" href="utilidades.html">Utilidades</a></li>
             </ul>
         </nav>
+
         <section class="section  bg-light">
-            <h3>Bienvenido a Boostrap 4</h3>
-            <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component
-                library.
-            </p>
-            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas
-                or
-                build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt
-                components, and powerful plugins built on jQuery.</p>
+            <h3>Componentes</h3>
+            <p>Esto es una alerta de color azul</p>
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+            <p>Esto es una alerta de color rojo</p>
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+            <p>Dismiss desaparece al clicar en la x</p>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         </section>
         <footer id="sticky-footer" class="bg-dark text-white">
-            <div class="container text-center py-2">
-                <small><a target="_blank" href="https://github.com/Erlantzcg89">Copyright &copy; Erlantz Caballero<span
+            <div class="container text-center p-2">
+                <small>Copyright &copy; Erlantz Caballero <a target="_blank" href="https://github.com/Erlantzcg89"><span
                             class="fab fa-github"></span></a></small>
             </div>
         </footer>
