@@ -1,5 +1,10 @@
-header.header {
-    padding: 20px 0 10px;
+body {
+    margin-top: 20px;
+}
+
+header {
+    padding: 40px 0 40px;
+    color: rgb(44, 44, 48);
 }
 
 header h1 {
@@ -23,30 +28,41 @@ main:before {
     color: red;
 }
 
-h1,
-h2 {
-    text-align: center;
+section {
+    min-height: 60vh;
 }
 
 h1 {
+    text-align: center;
     text-transform: uppercase;
-    color: teal;
+
 }
 
 li {
     list-style-type: none;
 }
 
-footer span {
+footer {
+    padding: 8px 30px 0;
+}
+
+footer small {
+    position: relative;
     margin-left: 5px;
+    bottom: 10px;
 }
 
 footer a {
+    text-transform: lowercase;
     color: white;
 }
 
+footer li a {
+    color: lightgrey;
+}
+
 footer a:hover {
-    color: yellow;
+    color: white;
     text-decoration: none;
 }
 
@@ -55,12 +71,16 @@ footer small {
     float: right;
 }
 
+pre code {
+    color: navy;
+}
+
 main.container {
     padding: 0;
 }
 
 .section {
-    padding: 10px;
+    padding: 30px 20px;
 }
 
 .row {
@@ -68,7 +88,6 @@ main.container {
 }
 
 .caja {
-    border: 1px solid #333;
     text-align: center;
 }
 

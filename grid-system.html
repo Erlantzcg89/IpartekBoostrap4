@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container shadow-lg rounded">
         <header class="header bg-light">
             <h1>Bootstrap 4</h1>
             <h6 class="text-center">página de ejemplo</h6>
@@ -30,33 +30,116 @@
             </ul>
         </nav>
 
-        <section class="section  bg-light">
-            <h3>Grid System</h3>
-            <p>Dividimos la fila en tres columnas para todos los breakpoints</p>
-            <div class="row">
-                <div class="caja col p-1 p-sm-4">
-                    One of three columns
-                </div>
-                <div class="caja col p-1 p-sm-4">
-                    One of three columns
-                </div>
-                <div class="caja col p-1 p-sm-4">
-                    One of three columns
+        <section class="section bg-light">
+            <h2>Grid System</h2>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <p>Boostrap funciona con un sistema de rejillas a 12 columnas</p>
+                    <p>Usa internamente <strong>Flex-box</strong> y es necesario que esté dentro de un
+                        <code>.container</code>
+                    </p>
+                    <p>Dividimos la fila en tres columnas para todos los breakpoints</p>
+                    <div class="row">
+                        <div class="caja col p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                        <div class="caja col p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                        <div class="caja col p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                    </div>
+
+                    <p>Dividimos la fila en tres columnas a partir de breakpoint sm</p>
+                    <div class="row">
+                        <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                        <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                        <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
+                            One of three columns
+                        </div>
+                    </div>
+                    <div class="row border border-primary text-center">
+                        <div class="col-12 col-sm-6 col-lg-4 p-2">
+                            Bloque 1
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 p-2">
+                            Bloque 2
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 p-2">
+                            Bloque 3
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <p>Dividimos la fila en tres columnas a partir de breakpoint sm</p>
-            <div class="row">
-                <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
-                    One of three columns
-                </div>
-                <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
-                    One of three columns
-                </div>
-                <div class="caja col-sm mb-1 mb-sm-0 p-1 p-sm-4">
-                    One of three columns
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Orden diferente según el breakpoint</h5>
+                    <div class="row text-center text-white">
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-2 order-sm-1">
+                            Elemento 1</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-3 order-sm-2">
+                            Elemento 2</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-4 order-sm-3">
+                            Elemento 3</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-5 order-sm-4">
+                            Elemento 4</div>
+                        <div
+                            class="col-12 col-sm-4 bg-white text-dark p-2 border border-transparent mb-1 mb-sm-0 order-1 order-sm-5">
+                            Elemento 5</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-6 order-sm-6">
+                            Elemento 6</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-7 order-sm-7">
+                            Elemento 7</div>
+                        <div
+                            class="col-12 col-sm-4 bg-warning p-2 border border-transparent mb-1 mb-sm-0 order-8 order-sm-8">
+                            Elemento 8</div>
+                        <div class="col-12 col-sm-4 bg-warning p-2 border border-transparent order-9 order-sm-9">
+                            Elemento 9
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Alineación vertical</h5>
+                    <p>Ponemos al <code>div.row</code> un estilo en lina <code>style="min-height=10rem"</code> para
+                        darle
+                        una
+                        altura mínima</p>
+                    <div class="row bg-warning text-center" style="min-height: 5rem;">
+                        <div class="col align-self-start bg-white p-2">Arriba</div>
+                        <div class="col align-self-center bg-white p-2">Centrado</div>
+                        <div class="col align-self-end bg-white p-2">Abajo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Offset</h5>
+                    <p>Queremos 3 columnas que ocupen 3 espacios, pero de la 2 a la 3 debe quedar un hueco</p>
+                    <div class="row">
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col offset-sm-3">3</div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <footer class="bg-dark text-white">
             <div class="container p-2 clearfix">
